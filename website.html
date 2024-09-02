@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoleStyle - Your Shoe Destination</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        header img {
+            width: 150px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .hero p {
+            font-size: 1.5em;
+        }
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .featured-collections {
+            margin: 20px 0;
+        }
+        .featured-collections h2 {
+            margin-bottom: 10px;
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product {
+            flex: 1;
+            margin: 10px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+        footer a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form label {
+            display: block;
+            margin-top: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="SoleStyle Logo">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Step into Style with SoleStyle</h1>
+    <p>Discover the latest trends in footwear</p>
+    <button>Shop Now</button>
+</section>
+
+<section class="content">
+    <div class="featured-collections">
+        <h2>Featured Collections</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="shoe1.jpg" alt="Shoe 1">
+                <h3>Classic Sneaker</h3>
+                <p>$59.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="shoe2.jpg" alt="Shoe 2">
+                <h3>Leather Boot</h3>
+                <p>$89.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more products here -->
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+        <form action="submit-form.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 SoleStyle | <a href="#about">About Us</a> | <a href="#contact">Contact</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    <p>Follow us on <a href="#">Facebook</a>, <a href="#">Instagram</a>, and <a href="#">Twitter</a></p>
+</footer>
+
+</body>
+</html>
